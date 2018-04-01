@@ -63,51 +63,7 @@ function getInputValues($name){
                 <input type="submit" id="loginButton" value="LogIn" name="loginButton" />
                 </form>
 
-            
-
-
-<!--             
-                <form action="register.php" method="post" id="registerForm">
-                <h2>Create your free acccount</h2>
-                <p> 
-                    <?php echo $account->getError(Errorconstant::$errorUsername); ?>
-                    <?php echo $account->getError(Errorconstant::$usernameExist); ?>
-                    <label for="username"> Username</label>
-                    <input type="text" id="username" name="username" value = "<?php getInputValues('username') ?>" required/>
-                </p>
-                <p>
-                <?php echo $account->getError(Errorconstant::$errorFirstName); ?>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required value = "<?php getInputValues('firstName') ?>" />
-                </p>
-                <?php echo $account->getError(Errorconstant::$errorLastName); ?>
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required value = "<?php getInputValues('lastName') ?>" />
-                </p>
-                <p>
-                <?php echo $account->getError(Errorconstant::$errorEmail); ?>
-                <?php echo $account->getError(Errorconstant::$emailExist); ?>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required value = "<?php getInputValues('email') ?>" />
-                </p>
-                <p>
-                <?php echo $account->getError(Errorconstant::$errorPasswordLength); ?>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required value = "<?php getInputValues('password') ?>"/>
-                </p>
-                <p>
-                <?php echo $account->getError(Errorconstant::$passwordDoNotMatch); ?>
-                    <label for="confPassword">Confirm Password</label>
-                    <input type="password" id="confPassword" name="confPassword" required value = "<?php getInputValues('confPassword') ?>" />
-                </p>
-                <input type="submit" id="registerButton" value="Signup" name="registerButton" />
-                </form>
-
-
-                ---------------------------------------------------------------------- -->
-
-
-                                
+                                      
                
 <!-- Material form register -->
 <form action="register.php" method="post" id="registerForm">

@@ -5,6 +5,7 @@ body,
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+    color:#fff;
 }
 
 body{
@@ -205,13 +206,53 @@ body{
 }
 
 #mainViewContainer{
-    background-color:yellow;  
+    /* background-color:yellow;   */
     /* letter remove it */
     margin-left: 220px;
     padding-bottom: 90px;
+    padding-top:0px;
     width:calc(100% - 220px);
 }
 
 #mainContent{
     padding: 0 20px;
+}
+.pageHeadingBig{
+    padding:20px;
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    font-style: initial;
+}
+
+.gridViewItem{
+    width:29%;
+    max-width:200px;
+    min-width:120px;
+    margin-right:20px;
+    margin-bottom:20px;
+
+}
+
+.gridViewItem img{
+    width:100%;
+
+}
+
+.gridViewContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gridViewInfo {
+    padding-top: 10px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.gridViewItem a{
+    text-decoration: none;
 }

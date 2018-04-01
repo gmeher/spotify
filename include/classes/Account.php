@@ -28,8 +28,8 @@ class Account{
 
 
     public function login($un, $pw){
-        $pw = md5($pw);
-        $loginQuery = mysqli_query($this->con,"SELECT * FROM users WHERE username = '$un' AND password = '$pw'");
+         //insert md5........
+        $loginQuery = mysqli_query($this->con,"SELECT * FROM users WHERE username = '$un' AND password = '$pw' ");
         if(mysqli_num_rows($loginQuery) == 1){
             return true;
         }
@@ -48,7 +48,7 @@ class Account{
 
 
     private function insertUserDetails($un,$fn,$ln,$em,$pw){
-       $encryptedPW = md5($pw);
+       $encryptedPW = $pw ;     // insert md5.....
        $date = date("Y-m-d");
        $profilepic = "assets/Images/profile-pic/p1.png";
 
